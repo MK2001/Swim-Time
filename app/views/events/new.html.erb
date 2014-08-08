@@ -1,0 +1,30 @@
+<h1>New Event</h1>
+
+<form action="/create_event">
+  <div>
+    <label for="length">length</label><br />
+     <select id="length" name="length">
+       <option value = "25 meters"> 25 meters </option>
+       <option value = "50 meters"> 50 meters </option>
+       <option value = "100 meters"> 100 meters </option>
+       <option value = "200 meters"> 200 meters </option>
+    </select>
+  </div>
+  <div>
+    <label for="stroke">stroke</label><br />
+    <select id="stroke" name="stroke">
+      <option value = "freestyle"> Freestyle </option>
+      <option value = "backstroke"> Backstroke </option>
+      <option value = "breaststroke"> Breaststroke </option>
+      <option value = "butterfly"> Butterfly </option>
+    </select>
+  </div>
+  <div>
+    <label for="meet_id">meet_id</label><br />
+    <input id="meet_id" name="meet_id" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+

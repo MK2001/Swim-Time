@@ -1,0 +1,14 @@
+.heading{
+  color:black; 
+  font-family:Georgia;
+}
+body{
+  background-image:url('http://wallzoa.com/wp-content/uploads/2013/07/water-background-hd.jpg');
+}
+jumbotron{
+  background-color:gray;
+}
+.sign_in{
+  color:black;
+}
+

@@ -1,0 +1,31 @@
+<h1>Swimmer Times</h1>
+
+<p><a href="/new_swimmertime">Add a New Swimmer Time</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Duration</th>
+      <th>Swimmer</th>
+      <th>Event</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @swimmer_times.each do |swimmertime| %>
+    <tr>
+      <td><%= swimmertime.duration %></td>
+      <td><%= swimmertime.swimmer_id %></td>
+      <td><%= swimmertime.event_id %></td>
+          <td><a href="/swimmertimes/<%= swimmertime.id %>">Show</a>
+        </td>
+      <td><a href="/swimmertimes/<%= swimmertime.id %>/edit">Edit</a></td>
+      <td><a href="/swimmertimes/<%= swimmertime.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

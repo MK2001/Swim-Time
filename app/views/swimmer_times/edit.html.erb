@@ -1,0 +1,21 @@
+<h1>Editing SwimmerTimes #<%= @swimmer_times.id %></h1>
+
+<form action="/swimmertimes/<%= @swimmer_times.id %>/update">
+  <div>
+    <label for="duration">duration</label><br />
+    <input id="duration" name="duration" value="<%= @swimmer_times.duration  %>" type="text" />
+  </div>
+  <div>
+    <label for="swimmer_id">swimmer_id</label><br />
+    <input id="swimmer_id" name="swimmer_id" value="<%= @swimmer_times.swimmer_id  %>" type="text" />
+  </div>
+  <div>
+    <label for="event_id">event_id</label><br />
+    <input id="event_id" name="event_id" value="<%= @swimmer_times.event_id  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

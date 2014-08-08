@@ -1,0 +1,19 @@
+<h1>Event #<%= @event.id %></h1>
+
+<div>
+  <strong>Length</strong>:<br />
+  <p><%= @event.length %></p>
+</div>
+<div>
+  <strong>Stroke</strong>:<br />
+  <p><%= @event.stroke %></p>
+</div>
+<div>
+  <strong>Meet</strong>:<br />
+  <p><%= @event.meet_id %></p>
+</div>
+
+<a href="/events/<%= @event.id %>/edit">Edit</a> |
+<a href="/events/<%= @event.id %>/destroy">Destroy</a>
+
+<a href = "/new_swimmertime">Record Time</a>

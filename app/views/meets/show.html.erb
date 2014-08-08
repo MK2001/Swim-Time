@@ -1,0 +1,11 @@
+<h1>Meet #<%= @meet.id %></h1>
+
+<div>
+  <strong>Name</strong>:<br />
+  <p><%= @meet.name %></p>
+</div>
+
+<a href="/meets/<%= @meet.id %>/edit">Edit</a> |
+<a href="/meets/<%= @meet.id %>/destroy">Destroy</a>
+
+<a href = "/new_event">Event Sign Up</a>

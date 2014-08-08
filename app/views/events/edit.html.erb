@@ -1,0 +1,21 @@
+<h1>Editing Event #<%= @event.id %></h1>
+
+<form action="/events/<%= @event.id %>/update">
+  <div>
+    <label for="length">length</label><br />
+    <input id="length" name="length" value="<%= @event.length  %>" type="text" />
+  </div>
+  <div>
+    <label for="stroke">stroke</label><br />
+    <input id="stroke" name="stroke" value="<%= @event.stroke  %>" type="text" />
+  </div>
+  <div>
+    <label for="meet_id">meet_id</label><br />
+    <input id="meet_id" name="meet_id" value="<%= @event.meet_id  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+

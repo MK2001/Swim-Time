@@ -1,0 +1,17 @@
+<h1>Swimmer Time #<%= @swimmer_times.id %></h1>
+
+<div>
+  <strong>Duration</strong>:<br />
+  <p><%= @swimmer_times.duration %></p>
+</div>
+<div>
+  <strong>Swimmer</strong>:<br />
+  <p><%= @swimmer_times.swimmer_id %></p>
+</div>
+<div>
+  <strong>Event</strong>:<br />
+  <p><%= @swimmer_times.event_id %></p>
+</div>
+
+<a href="/swimmertimes/<%= @swimmer_times.id %>/edit">Edit</a> |
+<a href="/swimmertimes/<%= @swimmer_times.id %>/destroy">Destroy</a>

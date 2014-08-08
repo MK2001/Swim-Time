@@ -1,0 +1,13 @@
+<h1> Meet #<%= @attendance.id %></h1>
+
+<div>
+  <strong>Swimmer</strong>:<br />
+  <p><%= @attendance.swimmer_id %></p>
+</div>
+<div>
+  <strong>Meet</strong>:<br />
+  <p><%= @attendance.meet_id %></p>
+</div>
+
+<a href="/attendances/<%= @attendance.id %>/edit">Edit</a> |
+<a href="/attendances/<%= @attendance.id %>/destroy">Destroy</a>
